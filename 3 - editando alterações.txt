@@ -1,0 +1,16 @@
+#editando o utimo commit
+$ git add .
+$ git commit --amend -m "mensagem(edição)" #commita alteração junto com o útimo sem criar um novo
+
+
+#remover arquivos da staging area após um $ git add errado:
+$ git reset HEAD arquivo.txt #remove arquivo.txt da sataged area
+
+
+#desfazendo mudanças nos arquivos (voltando ele ao estado do ultimo commit)
+$ git checkout -- arquivo.java #modifica o arquivo descartando todas as alterações feitas após o último commit
+
+
+#Para remover arquivos do repositório após um git add em que arquivos foram removidos:
+$ git rm arquivo.txt
+

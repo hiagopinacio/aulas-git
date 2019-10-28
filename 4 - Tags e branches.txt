@@ -1,0 +1,43 @@
+#criar tag
+$ git tag -a <TAG> -m "mensagem" #-a serve para criar tag anotada com usuario e horario...
+
+
+#Consutar tags:
+$ git tag
+
+
+#Criar tag para commits antigos:
+$ git tag -a v0.0 <CHAVE DO COMMIT> -m "mensagem. ex.: versao 0.0"
+
+
+#consultando detalhes sobre uma tag:
+$ git show <TAG>
+
+
+#restaurando versao anterior dos arquivos
+$ git checkout <TAG>
+
+
+#voltar a branch master (padrão)
+$ git checkout master #muda os arquivos para o ultimo do branch
+
+
+# deletando a tag:
+$ git tag -d <TAG>
+
+# ----------------
+# CRIANDO BRANCHES
+# ----------------
+$ git branch teste #cria um branch chamado teste
+$ git checkot teste # muda branch de tabalho de master para teste
+$ git checkot -b teste #cria e muda para o novo branch
+
+#MERGE
+1- volta para o branch padrão: $ git checkout master
+$ git merge teste # traz as alterações em teste para o branch atual
+$ git branch  -d teste #deleta o branch teste
+
+#caso haja confrito no merge
+'''ex.: um arquivo foi alterado em teste e depois oi alterado no branch master antes do merge'''
+ >> "as diferenças ficam salvas no arquivo conflintante, sendo necessário concertar manualmente de commitar depois"
+

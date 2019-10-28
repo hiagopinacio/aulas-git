@@ -1,0 +1,20 @@
+#Consultando alterações na pasta do projeto
+$ git status #mostra os arquivos alterados
+$ git diff # mostra as alterações realizadas na pasta do projeto
+	'''vermelho mostra o que foi removido'''
+	###verde mostra o que foi adicionado
+
+"""Ao dar um add (mandando os arquivos para staged area"""
+$git diff --staged #mostra as alterações dos arquivos adicionados para staged área
+
+
+
+#Histórico de commits
+$ git log #mostra todos os commits realizados com sua respectiva {CHAVE}
+
+$ git log -p #mostra lista dos commits + diff de cada arquivo em cada commits
+'''letra "q" sai do log criado'''
+
+$ git log -p -2 #mostra s ultimos 2 commits (pode utilizar qlq numero)
+
+$ gitk #mostra interface de visualização de relatórios de modificações
