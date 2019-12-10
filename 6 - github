@@ -1,8 +1,0 @@
-#criar chave ssh:
-1 - comando ssh-keygen
-2 - Adicionar chave ssh nas settings do github
-
-#clonar repositorio:
-1 - pegar chave ssh do repositorio no github
-2 - entrar na pasta para criar o projeto
-3 - git clone <CHAVE SSH>
